@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar >
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Personas
+        <button ion-button icon-only (click)="presentPopover($event)">
+          <ion-icon name="more"></ion-icon>
+        </button> </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let persona of personas">
+          <ion-avatar item-start>
+            <img src="{{persona.picture.thumbnail}}">
+          </ion-avatar>
+          <h2>{{persona.name.last}}, {{persona.name.first}}</h2>
+          <p>{{persona.email}}</p>
+          <p>{{persona.location.street}} ({{persona.location.city}})</p>
+        </ion-item>
+      </ion-list>
+
+</ion-content>

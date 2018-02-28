@@ -38,7 +38,10 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  rosa:(
+    base: rgba(119, 23, 82, 0.842),
+    contrast: rgb(252, 244, 244))
 );
 
 
